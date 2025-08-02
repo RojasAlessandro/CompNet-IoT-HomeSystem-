@@ -2,21 +2,6 @@
 
 This project simulates a smart home IoT system using three interconnected Raspberry Pis. It showcases real-time sensing, remote control, and device communication using lightweight protocols like MQTT and HTTP.
 
-## Project Structure
-
-smart-home-iot-network/
-├── iot_dht11_controller.py # Pi B: DHT11 Thermostat + LED
-├── iot_door_controller_v3.py # Pi C: Touch + Servo + LED + Webcam
-├── web_server_v3.py # Pi A: Flask + MQTT web server
-├── index.html # Legacy dashboard UI (for reference)
-├── compnet-app/ # ReactJS Dashboard (frontend)
-│ └── ... # Fully unpacked React project
-├── assets/
-│ ├── INF1006 Team Project Poster.pdf
-│ └── CompNet Project.mp4
-└── README.md # Project overview and documentation
-
-
 ## 🌐 Overview
 
 We simulate three key smart home functionalities:
