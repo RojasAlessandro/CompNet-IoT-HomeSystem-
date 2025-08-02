@@ -4,21 +4,6 @@ This project simulates a smart home IoT system using three interconnected Raspbe
 
 ## 🌐 Overview
 
-## Project Structure
-
-smart-home-iot-network/
-│
-├── iot_dht11_controller.py         # Pi B: DHT11 Thermostat + LED
-├── iot_door_controller_v3.py       # Pi C: Touch + Servo + LED + Webcam
-├── web_server_v3.py                # Pi A: Flask + MQTT web server
-├── index.html                      # Legacy dashboard UI (for reference)
-├── assets/
-│   ├── INF1006 Team Project Poster.pdf
-│   └── CompNet Project.mp4
-├── compnet-app/                    # ReactJS Dashboard (frontend)
-│   └── ...                         # Fully unpacked React project
-├── README.md                       # (To be generated below)
-
 We simulate three key smart home functionalities:
 
 - **Thermostat-controlled LED light**
