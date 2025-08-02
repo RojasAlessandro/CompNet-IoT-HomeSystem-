@@ -55,7 +55,7 @@ We simulate three key smart home functionalities:
 - Hosted from **Pi C** via Flask at:
 
 http://<PI_C_IP>:8000/video_feed
-(Embedded into the web dashboard hosted by **Pi A**
+(Embedded into the web dashboard hosted by **Pi A**)
 
 ## 🧠 Features
 
@@ -65,7 +65,6 @@ http://<PI_C_IP>:8000/video_feed
 - 🌡️ Automatic lighting based on temperature
 - 📶 All devices connected over a mobile hotspot (SSID: SmartHome_IoT)
 
-## 📂 Files & Responsibilities
 
 ## 📂 Files & Responsibilities
 
