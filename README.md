@@ -89,14 +89,6 @@ DHT11, Touch Sensor, LED, Servo, Webcam (USB)
 - **Andre Rojas** - System Integrator & Pi C (Webcam + Servo) Developer
 - Ang Ke Ying, Choh Kaifeng, Raffael Harjanto, Tay Yu Xuan Jolene
 
-## 🧾 Poster & Demo
-
-![Poster](./assets/poster.png)
-
-[🎬 Watch Demo Video](./assets/demo.mp4)
-
----
-
 > Built as part of SIT's Computer Networks Module (INF1006)
 
 How to Run:
