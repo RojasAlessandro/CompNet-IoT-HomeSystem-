@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Door</title>
+</head>
+<body>
+
+    <h2>Control Door</h2>
+    <form method="POST">
+        <button name="servo" value="open">Open Door</button>
+        <button name="servo" value="close">Close Door</button>
+        <br><br>
+        <button name="servo" value="led_on">Turn ON LED (DHT11)</button>
+        <button name="servo" value="led_off">Turn OFF LED (DHT11)</button>
+    </form>
+
+    <h3>LED Status:
+        <span id="led-status" style="color: red;">{{ led_status }}</span>
+    </h3>
+
+    <h3>Live Camera Feed from Pi C</h3>
+    <div style="width: 640px; border: 2px solid black; padding: 10px;">
+      <img src="http://192.168.198.61:8000/video_feed" width="100%" alt="Camera feed not ava>
+    </div>
+
+    <h3>Temperature: <span id="temp">{{ temperature }} °C</span></h3>
+    <h3>Humidity: <span id="hum">{{ humidity }} %</span></h3>
+
+    <script>
+        function fetchLEDStatus() {
+            fetch('/led_status')
+                .then(response => response.json())
+                .then(data => {
+                    const statusSpan = document.getElementById('led-status');
+                    statusSpan.textContent = data.status;
+                    statusSpan.style.color = (data.status === "ON") ? "green" : "red";
+                });
+        }
+
+
+        setInterval(() => {
+            fetchLEDStatus();
+            fetchSensorData();
+        }, 2000);  // every 2 seconds
+    </script>
+
+</body>
+</html>
+

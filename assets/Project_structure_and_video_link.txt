@@ -1,0 +1,17 @@
+## Project Structure
+
+smart-home-iot-network/
+├── iot_dht11_controller.py # Pi B: DHT11 Thermostat + LED
+├── iot_door_controller_v3.py # Pi C: Touch + Servo + LED + Webcam
+├── web_server_v3.py # Pi A: Flask + MQTT web server
+├── index.html # Legacy dashboard UI (for reference)
+├── compnet-app/ # ReactJS Dashboard (frontend)
+│ └── ... # Fully unpacked React project
+├── assets/
+│ ├── INF1006 Team Project Poster.pdf
+│ └── CompNet Project.mp4
+└── README.md # Project overview and documentation
+
+🎬 Demo Video:
+"Smart Home IoT Network Simulation using Raspberry Pi, MQTT & ReactJS | INF1006 SIT Project Demo"
+Watch on YouTube: https://www.youtube.com/watch?v=NPyOQ1uAIxQ&feature=youtu.be
