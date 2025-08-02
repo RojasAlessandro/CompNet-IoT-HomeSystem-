@@ -8,15 +8,16 @@ This project simulates a smart home IoT system using three interconnected Raspbe
 
 smart-home-iot-network/
 │
-├── iot_dht11_controller.py     # Pi B - Sensor + LED
-├── iot_door_controller_v3.py   # Pi C - Touch + Servo + LED + Webcam
-├── web_server_v3.py            # Pi A - Flask MQTT Webserver
-├── index.html                  # Old Flask HTML (deprecated by React)
-├── compnet-app/                # ReactJS frontend dashboard
-│   ├── package.json
-│   ├── public/
-│   └── src/
-└── README.md
+├── iot_dht11_controller.py         # Pi B: DHT11 Thermostat + LED
+├── iot_door_controller_v3.py       # Pi C: Touch + Servo + LED + Webcam
+├── web_server_v3.py                # Pi A: Flask + MQTT web server
+├── index.html                      # Legacy dashboard UI (for reference)
+├── assets/
+│   ├── INF1006 Team Project Poster.pdf
+│   └── CompNet Project.mp4
+├── compnet-app/                    # ReactJS Dashboard (frontend)
+│   └── ...                         # Fully unpacked React project
+├── README.md                       # (To be generated below)
 
 We simulate three key smart home functionalities:
 
@@ -66,14 +67,28 @@ http://<PI_C_IP>:8000/video_feed
 
 ## 📂 Files & Responsibilities
 
-| File                          | Purpose                                  |
-|-------------------------------|------------------------------------------|
-| `web_server_v3.py`           | Flask server for ReactJS dashboard       |
-| `index.html`                 | Dashboard interface (for testing)        |
-| `iot_dht11_controller.py`    | Pi B sensor controller for thermostat    |
-| `iot_door_controller_v3.py`  | Pi C controller for touch, LED, webcam, servo |
-| `demo.mp4`                   | Demo video                               |
-| `poster.png`                 | Project poster                           |
+## 📂 Files & Responsibilities
+
+| File                          | Purpose                                                  |
+|-------------------------------|----------------------------------------------------------|
+| `web_server_v3.py`           | Flask server for MQTT backend and legacy HTML UI        |
+| `index.html`                 | Old dashboard interface (superseded by React)            |
+| `iot_dht11_controller.py`    | Pi B controller: reads DHT11 sensor + toggles LED        |
+| `iot_door_controller_v3.py`  | Pi C controller: handles touch sensor, webcam, servo, LED|
+| `compnet-app/`               | ReactJS dashboard frontend (Node + TailwindCSS)          |
+| `assets/CompNet Project.mp4` | Demo video of the working system                         |
+| `assets/INF1006 Team Project Poster.pdf` | Project poster (for showcase/documentation)      |
+
+📚 Technologies Used
+Raspberry Pi (Python 3)
+
+Flask
+
+Paho MQTT
+
+ReactJS + Tailwind CSS
+
+DHT11, Touch Sensor, LED, Servo, Webcam (USB)
 
 ## 🚀 How to Run
 
